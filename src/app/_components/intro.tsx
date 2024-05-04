@@ -2,7 +2,7 @@
 
 export function Intro() {
   return (
-    <section className="flex-col md:flex-row flex items-center md:justify-between mt-16 mb-16 md:mb-12">
+    <section className="border-b-4 border-teal-400 flex-col md:flex-row flex items-center md:justify-between pb-4 mt-16 mb-8 md:mb-12">
       <h1 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8">
         モチヅ記
       </h1>
