@@ -9,10 +9,10 @@ import markdownToHtml from "@/lib/markdownToHtml";
 export default async function Index() {
   const allPosts = getAllPosts();
 
-  const heroPost = allPosts[0];
+  const recentPost = allPosts[0];
 
   const morePosts = allPosts.slice(0);
-  const content = await markdownToHtml(heroPost.content || "");
+  const firstContent = await markdownToHtml(recentPost.content || "");
 
   return (
     <main>
@@ -28,8 +28,10 @@ export default async function Index() {
           excerpt={heroPost.excerpt}
         />
         */}
+        <div className="grid grid-cols-1">
+          <PostBody content={firstContent} />
+        </div>
         {morePosts.length > 0 && <MoreStories posts={morePosts} />}
-        <PostBody content={content} />
       </Container>
     </main>
   );
