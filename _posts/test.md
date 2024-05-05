@@ -1,6 +1,6 @@
 ---
 title: "ブログ投稿のテスト"
-excerpt: ほげほげ
+excerpt: 過去ログ
 coverImage: "https://motttey.github.io/dora2024.webp"
 date: "2024-03-16T05:35:07.322Z"
 author:
