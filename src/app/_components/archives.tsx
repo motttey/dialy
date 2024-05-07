@@ -5,7 +5,7 @@ type Props = {
   posts: Post[];
 };
 
-export function MoreStories({ posts }: Props) {
+export function Archives({ posts }: Props) {
   return (
     <section>
       <div className="max-w-4xl mx-auto">

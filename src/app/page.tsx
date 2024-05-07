@@ -1,9 +1,8 @@
 import Container from "@/app/_components/container";
-// import { HeroPost } from "@/app/_components/hero-post";
+import { Archives } from "@/app/_components/archives";
 import { Header } from "@/app/_components/header";
-import { MoreStories } from "@/app/_components/more-stories";
-import { getAllPosts } from "@/lib/api";
 import { PostBody } from "./_components/post-body";
+import { getAllPosts } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 
 export default async function Index() {
@@ -11,7 +10,7 @@ export default async function Index() {
 
   const recentPost = allPosts[0];
 
-  const morePosts = allPosts.slice(0);
+  const pastPosts = allPosts.slice(0);
   const firstContent = await markdownToHtml(recentPost.content || "");
 
   return (
@@ -21,7 +20,7 @@ export default async function Index() {
         <div className="grid grid-cols-1">
           <PostBody content={firstContent} />
         </div>
-        {morePosts.length > 0 && <MoreStories posts={morePosts} />}
+        {pastPosts.length > 0 && <Archives posts={pastPosts} />}
       </Container>
     </main>
   );
