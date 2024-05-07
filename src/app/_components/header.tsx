@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <section className="border-b-4 border-teal-400 flex-col md:flex-row flex items-center md:justify-between pb-4 mt-16 mb-8 md:mb-12 max-w-4xl mx-auto">
+    <section className="border-b-4 border-[#22b8cf] flex-col md:flex-row flex items-center md:justify-between pb-4 mt-16 mb-8 md:mb-12 max-w-4xl mx-auto">
       <h1 className="text-4xl md:text-6xl font-bold tracking-tighter leading-tight md:pr-8">
         モチヅ記
       </h1>
