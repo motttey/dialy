@@ -1,5 +1,6 @@
 import { Post } from "@/interfaces/post";
 import { PostPreview } from "./post-preview";
+import { SectionSeparator } from "./section-separator";
 
 type Props = {
   posts: Post[];
@@ -9,6 +10,7 @@ export function Archives({ posts }: Props) {
   return (
     <section>
       <div className="max-w-4xl mx-auto">
+        <SectionSeparator></SectionSeparator>
         <h2 className="mb-8 text-2xl md:text-2xl font-bold tracking-tighter leading-tight">
           Archives
         </h2>
