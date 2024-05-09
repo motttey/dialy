@@ -22,6 +22,7 @@ const CoverImage = ({ title, src, slug }: Props) => {
       layout="responsive" 
       width={1300}
       height={630}
+      unoptimized={true}
     />
   );
   return (
