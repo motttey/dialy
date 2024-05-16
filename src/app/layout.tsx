@@ -8,6 +8,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: "https://motttey.github.io/dialy/",
   title: `モチヅ記`,
   description: `望月田吾作の日記です。`,
   openGraph: {
