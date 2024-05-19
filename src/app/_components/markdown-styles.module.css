@@ -24,3 +24,7 @@
 .markdown h4 {
   @apply text-xl mt-4 mb-4;
 }
+
+.markdown li {
+  list-style: circle inside;
+}
