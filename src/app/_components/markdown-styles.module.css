@@ -26,5 +26,15 @@
 }
 
 .markdown li {
-  list-style: circle inside;
+  list-style-position: outside;
+  padding-left: 0.5rem;
+}
+
+.markdown li::marker {
+  content: "|";
+  color:  #22b8cf;
+  font-size: 1.3rem;
+  font-weight: 800;
+  padding-left: 2em;
+  border-left: 5px solid #22b8cf;
 }
