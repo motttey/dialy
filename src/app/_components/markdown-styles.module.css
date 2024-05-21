@@ -19,10 +19,12 @@
 
 .markdown h3 {
   @apply text-2xl mt-8 mb-4 leading-snug;
+  font-weight: bold;
 }
 
 .markdown h4 {
   @apply text-xl mt-4 mb-4;
+  font-weight: bold;
 }
 
 .markdown li {
@@ -34,7 +36,7 @@
   content: "|";
   color:  #22b8cf;
   font-size: 1.3rem;
-  font-weight: 800;
-  padding-left: 2em;
+  font-weight: bolder;
+  padding-left: 2.5em;
   border-left: 5px solid #22b8cf;
 }
