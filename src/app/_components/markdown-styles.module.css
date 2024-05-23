@@ -49,3 +49,22 @@
 .markdown a:hover {
   text-decoration: underline;
 }
+
+.markdown blockquote{
+  font-style: italic;
+  color: #555555;
+  padding: 10px 5px 5px 25px;
+  border-left: 4px solid #22b8cf ;
+  line-height: 1.6;
+  position: relative;
+  background:#EDEDED;
+}
+
+.markdown blockquote::before{
+  content: "\201C";
+  color:  #22b8cf;
+  font-size: 4em;
+  position: absolute;
+  left: 10px;
+  top:-15px;
+}
