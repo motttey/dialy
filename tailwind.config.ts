@@ -27,6 +27,8 @@ const config: Config = {
         tighter: "-.04em",
       },
       fontSize: {
+        "3xl": "2.0rem",
+        "4xl": "2.25rem",
         "5xl": "2.5rem",
         "6xl": "2.75rem",
         "7xl": "4.5rem",
