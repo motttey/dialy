@@ -27,12 +27,26 @@
   font-weight: bold;
 }
 
-.markdown li {
+.markdown ul li {
   list-style-position: outside;
   padding-left: 0.5rem;
 }
 
-.markdown li::marker {
+.markdown ol li {
+  list-style-position: inside;
+  padding-left: 0.5rem;
+}
+
+.markdown ol { 
+  list-style-type: decimal;
+}
+
+.markdown ol li::marker {
+  color:  #22b8cf;
+  font-weight: bolder;
+}
+
+.markdown ul li::marker {
   content: "|";
   color:  #22b8cf;
   font-size: 1.3rem;
