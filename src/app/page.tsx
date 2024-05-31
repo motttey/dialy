@@ -6,9 +6,11 @@ import { getAllPosts } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 
 export default async function Index() {
-  const allPosts = getAllPosts();
-
-  const recentPost = allPosts[0];
+  const allPosts = getAllPosts()
+  const sortedList = [...allPosts].sort(
+    (a, b) => (a.title > b.title) ? (a.title === b.title) ? 0 : -1: 1
+  );
+  const recentPost = sortedList[0];
 
   const pastPosts = allPosts.slice(0);
   const firstContent = await markdownToHtml(recentPost.content || "");
