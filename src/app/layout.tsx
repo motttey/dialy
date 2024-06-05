@@ -7,13 +7,40 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const title = "モチヅ記";
+const description = "望月田吾作の日記です。インターネットに痕跡を残すために始めました。";
+const url = "https://motttey.github.io/mochiduko-24";
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://motttey.github.io/dialy/"),
   title: `モチヅ記`,
-  description: `望月田吾作の日記です。`,
+  icons: "/favicon.ico",
+  keywords: [
+    "望月",
+    "望月田吾作",
+    "日記",
+    "ブログ"
+  ],
   openGraph: {
-    images: [HOME_OG_IMAGE_URL],
+    title,
+    description,
+    url,
+    siteName: title,
+    locale: "ja_JP",
+    type: "website",
+    images: {
+      url: HOME_OG_IMAGE_URL,
+    },
   },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+    site: "@mt_tg",
+    creator: "@mt_tg",
+    images: [ HOME_OG_IMAGE_URL ],
+  },
+  description: `望月田吾作の日記です。`,
 };
 
 export default function RootLayout({
