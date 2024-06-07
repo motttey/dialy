@@ -23,7 +23,7 @@ export function Archives({ posts }: Props) {
               date={post.date}
               author={post.author}
               slug={post.slug}
-              excerpt={post.excerpt}
+              description={post.description}
             />
           ))}
         </div>
