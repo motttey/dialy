@@ -4,6 +4,7 @@ import { Header } from "@/app/_components/header";
 import { PostBody } from "./_components/post-body";
 import { getAllPosts } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
+import CoverImage from "./_components/cover-image";
 
 export default async function Index() {
   const allPosts = getAllPosts()
@@ -20,6 +21,7 @@ export default async function Index() {
       <Container>
         <Header />
         <div className="grid grid-cols-1">
+          <CoverImage slug={recentPost.slug} title={recentPost.title} src={recentPost.coverImage} />
           <PostBody content={firstContent} />
         </div>
         {pastPosts.length > 0 && <Archives posts={pastPosts} />}
