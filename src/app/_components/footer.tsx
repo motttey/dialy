@@ -9,9 +9,7 @@ export function Footer() {
             Mochidu-ki
           </h3>
           <div className="flex flex-col lg:flex-row justify-center items-center lg:pl-4 lg:w-1/2">
-            <p
-              className="mx-3 font-bold"
-            >
+            <p className="mx-3 font-bold">
               © {new Date().getFullYear()} Tagosaku Mochiduki
             </p>
           </div>

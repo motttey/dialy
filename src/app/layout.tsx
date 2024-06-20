@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 import Footer from "@/app/_components/footer";
 import { HOME_OG_IMAGE_URL } from "@/lib/constants";
@@ -10,19 +10,15 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 const title = "モチヅ記";
-const description = "望月田吾作の日記です。インターネットに痕跡を残すために始めました。";
+const description =
+  "望月田吾作の日記です。インターネットに痕跡を残すために始めました。";
 const url = "https://motttey.github.io/mochiduko-24";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://motttey.github.io/dialy/"),
   title: `モチヅ記`,
   icons: "/favicon.ico",
-  keywords: [
-    "望月",
-    "望月田吾作",
-    "日記",
-    "ブログ"
-  ],
+  keywords: ["望月", "望月田吾作", "日記", "ブログ"],
   openGraph: {
     title,
     description,
@@ -40,7 +36,7 @@ export const metadata: Metadata = {
     description,
     site: "@mt_tg",
     creator: "@mt_tg",
-    images: [ HOME_OG_IMAGE_URL ],
+    images: [HOME_OG_IMAGE_URL],
   },
   description: `望月田吾作の日記です。`,
 };

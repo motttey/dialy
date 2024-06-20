@@ -5,7 +5,7 @@ export function Header() {
         モチヅ記
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        A dialy written by {" "}
+        A dialy written by{" "}
         <a
           href="https://motttey.github.io/"
           className="underline hover:text-blue-600 duration-200 transition-colors"

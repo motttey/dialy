@@ -7,9 +7,9 @@ import markdownToHtml from "@/lib/markdownToHtml";
 import CoverImage from "./_components/cover-image";
 
 export default async function Index() {
-  const allPosts = getAllPosts()
-  const sortedList = [...allPosts].sort(
-    (a, b) => (a.title > b.title) ? (a.title === b.title) ? 0 : -1: 1
+  const allPosts = getAllPosts();
+  const sortedList = [...allPosts].sort((a, b) =>
+    a.title > b.title ? (a.title === b.title ? 0 : -1) : 1,
   );
   const recentPost = sortedList[0];
 
@@ -21,7 +21,11 @@ export default async function Index() {
       <Container>
         <Header />
         <div className="grid grid-cols-1">
-          <CoverImage slug={recentPost.slug} title={recentPost.title} src={recentPost.coverImage} />
+          <CoverImage
+            slug={recentPost.slug}
+            title={recentPost.title}
+            src={recentPost.coverImage}
+          />
           <PostBody content={firstContent} />
         </div>
         {pastPosts.length > 0 && <Archives posts={pastPosts} />}

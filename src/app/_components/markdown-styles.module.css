@@ -35,18 +35,18 @@
   padding-left: 0.5rem;
 }
 
-.markdown ol { 
+.markdown ol {
   list-style-type: decimal;
 }
 
 .markdown ol li::marker {
-  color:  #22b8cf;
+  color: #22b8cf;
   font-weight: bolder;
 }
 
 .markdown ul li::marker {
   content: "|";
-  color:  #22b8cf;
+  color: #22b8cf;
   font-size: 1.3rem;
   font-weight: bolder;
   padding-left: 2.5em;
@@ -62,21 +62,21 @@
   text-decoration: underline;
 }
 
-.markdown blockquote{
+.markdown blockquote {
   font-style: italic;
   color: #555555;
   padding: 10px 5px 5px 25px;
-  border-left: 4px solid #22b8cf ;
+  border-left: 4px solid #22b8cf;
   line-height: 1.6;
   position: relative;
-  background:#EDEDED;
+  background: #ededed;
 }
 
-.markdown blockquote::before{
+.markdown blockquote::before {
   content: "\201C";
-  color:  #22b8cf;
+  color: #22b8cf;
   font-size: 4em;
   position: absolute;
   left: 10px;
-  top:-15px;
+  top: -15px;
 }
