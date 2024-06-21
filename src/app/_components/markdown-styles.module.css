@@ -25,6 +25,11 @@
   @apply text-xl mt-4 mb-4 font-bold;
 }
 
+.markdown li {
+  overflow-wrap: break-word;
+  text-align: justify;
+}
+
 .markdown ul li {
   list-style-position: outside;
   padding-left: 0.5rem;
