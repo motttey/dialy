@@ -3,16 +3,27 @@ import React from "react";
 import Footer from "@/app/_components/footer";
 import { HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+
+import { Noto_Sans_JP } from "next/font/google";
 
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const title = "モチヅ記";
 const description =
   "望月田吾作の日記です。インターネットに痕跡を残すために始めました。";
 const url = "https://motttey.github.io/mochiduko-24";
+
+// フォントを読み込み
+// const inter = Inter({ subsets: ["latin"] });
+
+const NotoSansJP = Noto_Sans_JP({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  // https://github.com/vercel/next.js/pull/44594
+  variable: "--font-noto-sans-jp",
+  preload: true,
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://motttey.github.io/dialy/"),
@@ -81,7 +92,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       </head>
-      <body className={inter.className}>
+      <body className={`${NotoSansJP.className}`}>
         <div className="min-h-screen">{children}</div>
         <Footer />
       </body>
