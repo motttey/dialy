@@ -13,17 +13,17 @@ const CoverImage = ({ title, src, slug }: Props) => {
     <Image
       src={src}
       alt={`Cover Image for ${title}`}
-      className={cn("shadow-sm w-full object-fit rounded-lg", {
+      className={cn("flex shadow-sm rounded-lg", {
         "hover:shadow-lg transition-shadow duration-200": slug,
       })}
-      width={1500}
+      width={1000}
       height={600}
       unoptimized={true}
       priority={true}
     />
   );
   return (
-    <div className="overflow-hidden rounded-lg sm:h-64 md:h-72 lg:h-96 flex justify-center items-center">
+    <div className="overflow-hidden rounded-lg max-w-[900px] mx-auto sm:h-64 md:h-72 lg:h-96 flex justify-center items-center">
       {slug ? (
         <Link href={`/posts/${slug}`} aria-label={title}>
           {image}
