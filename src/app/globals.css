@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.body {
+  &:lang(en) {
+    font-kerning: normal;
+    text-wrap: pretty;
+  }
+
+  &:lang(ja) {
+    font-kerning: none;
+  }
+}

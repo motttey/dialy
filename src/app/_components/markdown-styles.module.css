@@ -28,6 +28,7 @@
 .markdown li {
   overflow-wrap: break-word;
   text-align: justify;
+  text-wrap: pretty;
 }
 
 .markdown ul li {
