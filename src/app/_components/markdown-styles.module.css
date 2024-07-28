@@ -51,7 +51,7 @@
 }
 
 .markdown ul li::marker {
-  content: "◼︎";
+  content: "|";
   color: #22b8cf;
   font-size: 1.3rem;
   font-weight: bolder;
