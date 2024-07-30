@@ -25,6 +25,29 @@
   @apply text-xl mt-4 mb-4 font-bold;
 }
 
+/* Mobile styles for Markdown */
+@media (max-width: 600px) {
+  .markdown h1 {
+    @apply text-3xl mt-12 mb-4 font-bold leading-snug;
+  }
+  
+  .markdown h2 {
+    @apply text-2xl mt-8 mb-4 font-bold leading-snug;
+  }
+  
+  .markdown h3 {
+    @apply text-xl mt-4 mb-4 font-bold;
+  }
+
+  .markdown h4 {
+    @apply text-lg mt-4 mb-4 font-bold;
+  }
+
+  .markdown {
+    @apply text-base leading-relaxed;
+  }
+}
+
 .markdown li {
   overflow-wrap: break-word;
   text-align: justify;
