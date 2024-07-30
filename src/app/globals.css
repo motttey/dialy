@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* スマートフォンで横幅が狭くなるのを抑制 */
+main {
+  overflow-x: hidden;
+}
+
 body {
   &:lang(en) {
     font-kerning: normal;
