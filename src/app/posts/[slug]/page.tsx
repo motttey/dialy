@@ -21,15 +21,17 @@ export default async function Post({ params }: Params) {
     <main>
       <Container>
         <Header />
-        <article className="mb-32 max-w-4xl sm:mx-16">
-          <PostHeader
-            title={post.title}
-            coverImage={post.coverImage}
-            author={post.author}
-          />
-          <SectionSeparator></SectionSeparator>
-          <PostBody content={content} />
-        </article>
+        <div className="grid grid-cols-1">
+          <article className="mb-32 mx-auto sm:mx-16">
+            <PostHeader
+              title={post.title}
+              coverImage={post.coverImage}
+              author={post.author}
+            />
+            <SectionSeparator></SectionSeparator>
+            <PostBody content={content} />
+          </article>
+        </div>
       </Container>
     </main>
   );
