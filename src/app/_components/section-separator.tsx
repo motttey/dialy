@@ -1,3 +1,3 @@
 export function SectionSeparator() {
-  return <hr className="border-neutral-200 my-4 lg:my-24" />;
+  return <hr className="my-4 border-neutral-200 lg:my-24" />;
 }

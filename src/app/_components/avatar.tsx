@@ -12,7 +12,7 @@ const Avatar = ({ name, picture }: Props) => {
         src={picture}
         width={50}
         height={50}
-        className="w-12 h-12 rounded-full mr-4"
+        className="mr-4 size-12 rounded-full"
         alt={name}
         unoptimized={true}
       />

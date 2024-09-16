@@ -26,7 +26,7 @@ export function PostPreview({
       <div className="mb-5">
         <CoverImage slug={slug} title={title} src={coverImage} />
       </div>
-      <h3 className="text-2xl mb-3 leading-snug font-bold">
+      <h3 className="mb-3 text-2xl font-bold leading-snug">
         <Link href={`/posts/${slug}`} className="hover:underline">
           {title}
         </Link>
@@ -36,7 +36,7 @@ export function PostPreview({
         <DateFormatter dateString={date} />
       </div>
       */}
-      <p className="text-lg leading-relaxed mb-4">{description}</p>
+      <p className="mb-4 text-lg leading-relaxed">{description}</p>
       <Avatar name={author.name} picture={author.picture} />
     </div>
   );

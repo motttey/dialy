@@ -22,7 +22,7 @@ export default async function Post({ params }: Params) {
       <Container>
         <Header />
         <div className="grid grid-cols-1">
-          <article className="mb-32 mx-auto sm:mx-16">
+          <article className="mx-auto mb-32 sm:mx-16">
             <PostHeader
               title={post.title}
               coverImage={post.coverImage}
