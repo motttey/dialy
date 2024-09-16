@@ -16,7 +16,7 @@ const NotoSerifJP = Noto_Serif_JP({
 
 export function PostBody({ content }: Props) {
   return (
-    <div className={`mx-auto max-w-full	lg:max-w-4xl ${NotoSerifJP.className}`}>
+    <div className={`mx-auto max-w-full lg:max-w-4xl ${NotoSerifJP.className}`}>
       <div
         className={markdownStyles["markdown"]}
         dangerouslySetInnerHTML={{ __html: content }}
