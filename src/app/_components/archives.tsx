@@ -1,6 +1,6 @@
-import { Post } from "@/interfaces/post";
 import { PostPreview } from "@/app/_components/post-preview";
 import { SectionSeparator } from "@/app/_components/section-separator";
+import { Post } from "@/interfaces/post";
 
 type Props = {
   posts: Post[];

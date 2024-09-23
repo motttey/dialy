@@ -1,10 +1,10 @@
-import Container from "@/app/_components/container";
 import { Archives } from "@/app/_components/archives";
+import Container from "@/app/_components/container";
+import CoverImage from "@/app/_components/cover-image";
 import { Header } from "@/app/_components/header";
 import { PostBody } from "@/app/_components/post-body";
 import { getAllPosts } from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
-import CoverImage from "@/app/_components/cover-image";
 
 export default async function Index() {
   const allPosts = getAllPosts();

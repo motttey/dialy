@@ -1,12 +1,9 @@
-import React from "react";
-
+import "./globals.css";
 import Footer from "@/app/_components/footer";
 import { HOME_OG_IMAGE_URL } from "@/lib/constants";
 import type { Metadata } from "next";
-
 import { Noto_Sans_JP } from "next/font/google";
-
-import "./globals.css";
+import React from "react";
 
 const title = "モチヅ記";
 const description =

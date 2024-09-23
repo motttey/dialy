@@ -1,5 +1,5 @@
-import { Noto_Serif_JP } from "next/font/google";
 import markdownStyles from "./markdown-styles.module.css";
+import { Noto_Serif_JP } from "next/font/google";
 
 type Props = {
   content: string;
