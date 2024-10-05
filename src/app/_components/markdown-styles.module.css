@@ -116,3 +116,11 @@
   left: 10px;
   top: -15px;
 }
+
+.markdown img {
+  width: 80%;
+  max-width: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
