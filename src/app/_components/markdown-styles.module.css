@@ -26,7 +26,7 @@
 }
 
 /* Mobile styles for Markdown */
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .markdown p,
   .markdown ul,
   .markdown ol,
@@ -100,7 +100,7 @@
 
 .markdown blockquote {
   font-style: italic;
-  color: #555555;
+  color: #555;
   padding: 10px 5px 5px 25px;
   border-left: 4px solid #22b8cf;
   line-height: 1.6;
