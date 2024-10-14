@@ -124,3 +124,11 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.markdown em {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-style: normal;
+}
