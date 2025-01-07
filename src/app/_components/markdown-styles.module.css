@@ -91,7 +91,7 @@
 
 .markdown a {
   color: #2262cf;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .markdown a:hover {
@@ -103,7 +103,7 @@
   color: #555;
   padding: 10px 5px 5px 25px;
   border-left: 4px solid #22b8cf;
-  line-height: 1.6;
+  line-height: 1.6em;
   position: relative;
   background: #ededed;
 }
