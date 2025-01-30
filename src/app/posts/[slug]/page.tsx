@@ -8,7 +8,8 @@ import markdownToHtml from "@/lib/markdownToHtml";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-export default async function Post({ params }: Params) {
+export default async function Post(props: Params) {
+  const params = await props.params;
   const post = getPostBySlug(params.slug);
 
   if (!post) {
@@ -38,12 +39,13 @@ export default async function Post({ params }: Params) {
 }
 
 type Params = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
-export function generateMetadata({ params }: Params): Metadata {
+export async function generateMetadata(props: Params): Promise<Metadata> {
+  const params = await props.params;
   const post = getPostBySlug(params.slug);
 
   if (!post) {
