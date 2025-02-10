@@ -4,6 +4,7 @@ import CoverImage from "@/app/_components/cover-image";
 import { Header } from "@/app/_components/header";
 // import { PostBody } from "@/app/_components/post-body";
 import { getAllPosts } from "@/lib/api";
+
 // import markdownToHtml from "@/lib/markdownToHtml";
 
 export default async function Index() {
