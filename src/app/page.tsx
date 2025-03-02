@@ -29,7 +29,7 @@ export default async function Index() {
           />
           {/* <PostBody content={firstContent} /> */}
           <div className={"mx-auto max-w-full lg:max-w-4xl"}>
-            終了です. さようなら
+            表示していません
           </div>
         </div>
         {pastPosts.length > 0 && <Archives posts={pastPosts} />}
