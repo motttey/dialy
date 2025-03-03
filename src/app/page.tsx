@@ -2,13 +2,15 @@ import { Archives } from "@/app/_components/archives";
 import Container from "@/app/_components/container";
 import CoverImage from "@/app/_components/cover-image";
 import { Header } from "@/app/_components/header";
+import PostService from "@/lib/api";
+
 // import { PostBody } from "@/app/_components/post-body";
-import { getAllPosts } from "@/lib/api";
+const postService = new PostService();
 
 // import markdownToHtml from "@/lib/markdownToHtml";
 
 export default async function Index() {
-  const allPosts = getAllPosts();
+  const allPosts = postService.getAllPosts();
   const sortedList = [...allPosts].sort((a, b) =>
     a.title > b.title ? (a.title === b.title ? 0 : -1) : 1,
   );

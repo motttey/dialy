@@ -1,16 +1,19 @@
 import Container from "@/app/_components/container";
 import { Header } from "@/app/_components/header";
 import { PostBody } from "@/app/_components/post-body";
-import { getAllPosts, getPostBySlug } from "@/lib/api";
+import { Post as PostInterface } from "@/interfaces/post";
+import PostService from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 const MEMO_DIR = "_memo";
 
+const postService = new PostService(MEMO_DIR);
+
 export default async function Post(props: Params) {
   const params = await props.params;
-  const post = getPostBySlug(params.slug, MEMO_DIR);
+  const post = postService.getPostBySlug(params.slug);
 
   if (!post) {
     return notFound();
@@ -40,7 +43,7 @@ type Params = {
 
 export async function generateMetadata(props: Params): Promise<Metadata> {
   const params = await props.params;
-  const post = getPostBySlug(params.slug, MEMO_DIR);
+  const post = postService.getPostBySlug(params.slug);
 
   if (!post) {
     return notFound();
@@ -60,9 +63,9 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  const posts = getAllPosts(MEMO_DIR);
+  const posts = postService.getAllPosts();
 
-  return posts.map((post) => ({
+  return posts.map((post: PostInterface) => ({
     slug: post.slug,
   }));
 }

@@ -3,14 +3,16 @@ import { Header } from "@/app/_components/header";
 import { PostBody } from "@/app/_components/post-body";
 import { PostHeader } from "@/app/_components/post-header";
 import { SectionSeparator } from "@/app/_components/section-separator";
-import { getAllPosts, getPostBySlug } from "@/lib/api";
+import PostService from "@/lib/api";
 import markdownToHtml from "@/lib/markdownToHtml";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+const postService = new PostService();
+
 export default async function Post(props: Params) {
   const params = await props.params;
-  const post = getPostBySlug(params.slug);
+  const post = postService.getPostBySlug(params.slug);
 
   if (!post) {
     return notFound();
@@ -46,7 +48,7 @@ type Params = {
 
 export async function generateMetadata(props: Params): Promise<Metadata> {
   const params = await props.params;
-  const post = getPostBySlug(params.slug);
+  const post = postService.getPostBySlug(params.slug);
 
   if (!post) {
     return notFound();
@@ -64,7 +66,7 @@ export async function generateMetadata(props: Params): Promise<Metadata> {
 }
 
 export async function generateStaticParams() {
-  const posts = getAllPosts();
+  const posts = postService.getAllPosts();
 
   return posts.map((post) => ({
     slug: post.slug,

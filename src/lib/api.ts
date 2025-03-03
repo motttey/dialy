@@ -3,26 +3,31 @@ import fs from "fs";
 import matter from "gray-matter";
 import { join } from "path";
 
-const postsDirectory = (dir: string) => join(process.cwd(), dir);
+class PostService {
+  private dir: string;
 
-export function getPostSlugs(dir?: string) {
-  return fs.readdirSync(postsDirectory(dir ? dir : "_posts"));
+  constructor(dir: string = "_posts") {
+    this.dir = join(process.cwd(), dir);
+  }
+
+  private getPostSlugs(): string[] {
+    return fs.readdirSync(this.dir);
+  }
+
+  private getPostBySlug(slug: string): Post {
+    const realSlug = slug.replace(/\.md$/, "");
+    const fullPath = join(this.dir, `${realSlug}.md`);
+    const fileContents = fs.readFileSync(fullPath, "utf8");
+    const { data, content } = matter(fileContents);
+
+    return { ...data, slug: realSlug, content } as Post;
+  }
+
+  public getAllPosts(): Post[] {
+    return this.getPostSlugs()
+      .map((slug) => this.getPostBySlug(slug))
+      .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+  }
 }
 
-export function getPostBySlug(slug: string, dir?: string) {
-  const realSlug = slug.replace(/\.md$/, "");
-  const fullPath = join(postsDirectory(dir ? dir : "_posts"), `${realSlug}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
-  const { data, content } = matter(fileContents);
-
-  return { ...data, slug: realSlug, content } as Post;
-}
-
-export function getAllPosts(dir?: string): Post[] {
-  const slugs = getPostSlugs(dir);
-  const posts = slugs
-    .map((slug) => getPostBySlug(slug, dir))
-    // sort posts by date in descending order
-    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
-  return posts;
-}
+export default PostService;
