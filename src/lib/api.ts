@@ -10,11 +10,11 @@ class PostService {
     this.dir = join(process.cwd(), dir);
   }
 
-  private getPostSlugs(): string[] {
+  public getPostSlugs(): string[] {
     return fs.readdirSync(this.dir);
   }
 
-  private getPostBySlug(slug: string): Post {
+  public getPostBySlug(slug: string): Post {
     const realSlug = slug.replace(/\.md$/, "");
     const fullPath = join(this.dir, `${realSlug}.md`);
     const fileContents = fs.readFileSync(fullPath, "utf8");
