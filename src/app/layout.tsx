@@ -10,9 +10,6 @@ const description =
   "望月田吾作の日記です。インターネットに痕跡を残すために始めました。";
 const url = "https://motttey.github.io/mochiduko-24";
 
-// フォントを読み込み
-// const inter = Inter({ subsets: ["latin"] });
-
 const NotoSansJP = Noto_Sans_JP({
   weight: ["400", "700"],
   subsets: ["latin"],
@@ -57,22 +54,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="/favicon/apple-touch-icon.png"
-        />
+        <link rel="icon" sizes="180x180" href="/favicon/icon128_maskable.png" />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon/favicon-32x32.png"
+          href="/favicon/favicon.ico"
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon/favicon-16x16.png"
+          href="/favicon/favicon.ico"
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
         <link
