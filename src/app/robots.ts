@@ -13,6 +13,11 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: "Googlebot",
         allow: ["/", "/dialy"],
       },
+      // 効かないかも
+      {
+        userAgent: "ia_archiver",
+        disallow: ["/", "/dialy"],
+      },
     ],
   };
 }
