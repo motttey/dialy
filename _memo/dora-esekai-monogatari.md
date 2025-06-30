@@ -1,5 +1,6 @@
 ---
 title: "映画ドラえもん のび太の絵世界物語 感想"
+coverImage: "https://motttey.github.io/dialy/assets/memo/kuchilatte_paru.webp"
 ogImage:
   url: "https://motttey.github.io/dialy/assets/memo/kuchilatte_paru.webp"
 ---
@@ -7,7 +8,7 @@ ogImage:
 # 映画ドラえもん のび太の絵世界物語 感想
 **注: ネタバレを含みます**
 
-この文章は。[映画ドラえもん のび太の絵世界物語](https://doraeiga.com/2025/)の感想文です。
+この文章は、[映画ドラえもん のび太の絵世界物語](https://doraeiga.com/2025/)の感想文です。
 
 ![口ラテされるパル](https://motttey.github.io/dialy/assets/memo/kuchilatte_paru.webp "のび太の絵世界物語 パル 口ラテ") *口ラテされるパル*
 
