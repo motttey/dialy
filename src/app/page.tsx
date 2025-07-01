@@ -28,6 +28,7 @@ export default async function Index() {
             slug={recentPost.slug}
             title={recentPost.title}
             src={recentPost.coverImage}
+            path="posts"
           />
           {/* <PostBody content={firstContent} /> */}
           <div className={"mx-auto max-w-full lg:max-w-4xl"}>
