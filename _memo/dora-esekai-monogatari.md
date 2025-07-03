@@ -3,6 +3,7 @@ title: "映画ドラえもん のび太の絵世界物語 感想"
 coverImage: "https://motttey.github.io/dialy/assets/memo/kuchilatte_paru.webp"
 ogImage:
   url: "https://motttey.github.io/dialy/assets/memo/kuchilatte_paru.webp"
+description: "[ネタバレあり] ハイパードラえもんクリエイターの望月田吾作による、映画ドラえもん のび太の絵世界物語の感想文です。"
 ---
 
 # 映画ドラえもん のび太の絵世界物語 感想
