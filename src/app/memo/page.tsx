@@ -2,6 +2,7 @@ import Container from "@/app/_components/container";
 import { Header } from "@/app/_components/header";
 import PostService from "@/lib/api";
 import Link from "next/link";
+import DateFormatter from "../_components/date-formatter";
 
 const MEMO_DIR = "_memo";
 const postService = new PostService(MEMO_DIR);
@@ -21,7 +22,7 @@ export default async function Index() {
                 href={`/memo/${memo.slug}`}
                 className="text-lg hover:underline"
               >
-                {memo.title} [{memo.date.toLocaleString()}]
+                {memo.title} [{<DateFormatter dateString={memo.date} />}]
               </Link>
             </li>
           ))}

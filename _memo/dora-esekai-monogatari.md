@@ -1,6 +1,6 @@
 ---
 title: "映画ドラえもん のび太の絵世界物語 感想"
-date: 2025-07-01
+date: "2027-07-01T00:00:00.000Z"
 coverImage: "https://motttey.github.io/dialy/assets/memo/kuchilatte_paru.webp"
 ogImage:
   url: "https://motttey.github.io/dialy/assets/memo/kuchilatte_paru.webp"

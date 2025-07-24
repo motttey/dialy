@@ -1,6 +1,6 @@
 ---
 title: "ドラえもんとしてのAIエージェント"
-date: 2025-07-24
+date: "2027-07-24T00:00:00.000Z"
 ogImage:
   url: "https://motttey.github.io/dora2024.webp"
 ---
