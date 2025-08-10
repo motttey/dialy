@@ -2,7 +2,6 @@ import Container from "@/app/_components/container";
 import DateFormatter from "@/app/_components/date-formatter";
 import { Header } from "@/app/_components/header";
 import PostService from "@/lib/api";
-
 import Image from "next/image";
 import Link from "next/link";
 
