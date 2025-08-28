@@ -3,8 +3,6 @@ import CoverImage from "@/app/_components/cover-image";
 import { type Author } from "@/interfaces/author";
 import Link from "next/link";
 
-// import DateFormatter from "./date-formatter";
-
 type Props = {
   title: string;
   coverImage: string;
@@ -17,7 +15,6 @@ type Props = {
 export function PostPreview({
   title,
   coverImage,
-  // date,
   description,
   author,
   slug,
@@ -32,11 +29,6 @@ export function PostPreview({
           {title}
         </Link>
       </h3>
-      {/*
-      <div className="text-lg mb-4">
-        <DateFormatter dateString={date} />
-      </div>
-      */}
       <p className="mb-4 text-lg leading-relaxed">{description}</p>
       <Avatar name={author.name} picture={author.picture} />
     </div>
