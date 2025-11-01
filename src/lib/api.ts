@@ -11,7 +11,16 @@ class PostService {
   }
 
   public getPostSlugs(): string[] {
-    return fs.readdirSync(this.dir);
+    const dirents = fs.readdirSync(this.dir, { withFileTypes: true });
+    const files = dirents.flatMap((dirent) => {
+      if (dirent.isDirectory()) {
+        return fs
+          .readdirSync(join(this.dir, dirent.name))
+          .map((file) => join(dirent.name, file));
+      }
+      return [dirent.name];
+    });
+    return files.filter((file) => file.endsWith(".md"));
   }
 
   public getPostBySlug(slug: string): Post {

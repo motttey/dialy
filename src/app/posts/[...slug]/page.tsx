@@ -12,7 +12,8 @@ const postService = new PostService();
 
 export default async function Post(props: Params) {
   const params = await props.params;
-  const post = postService.getPostBySlug(params.slug);
+  const slug = params.slug.join("/");
+  const post = postService.getPostBySlug(slug);
 
   if (!post) {
     return notFound();
@@ -42,13 +43,14 @@ export default async function Post(props: Params) {
 
 type Params = {
   params: Promise<{
-    slug: string;
+    slug: string[];
   }>;
 };
 
 export async function generateMetadata(props: Params): Promise<Metadata> {
   const params = await props.params;
-  const post = postService.getPostBySlug(params.slug);
+  const slug = params.slug.join("/");
+  const post = postService.getPostBySlug(slug);
 
   if (!post) {
     return notFound();
@@ -79,6 +81,6 @@ export async function generateStaticParams() {
   const posts = postService.getAllPosts();
 
   return posts.map((post) => ({
-    slug: post.slug,
+    slug: post.slug.split("/"),
   }));
 }
