@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "lint": "next lint --fix",
+    "lint": "eslint src/",
     "stylelint": "stylelint 'src/app/**/*.css' --fix",
     "format": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,json,css}'",
     "build": "next build",
