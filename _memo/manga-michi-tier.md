@@ -1,11 +1,11 @@
 ---
-title: "まんが道 強さTier表"
+title: "まんが道 強さ議論"
 date: "2026-04-10T00:00:00.000Z"
 ogImage:
-  url: "https://motttey.github.io/dora2024.webp"
+  url: "https://pbs.twimg.com/media/HFryGr4aUAAaOpi?format=jpg"
 ---
 
-# まんが道 強さTier表
+# まんが道 強さ議論
 満賀視点です。
 
 ## SSS
