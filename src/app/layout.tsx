@@ -20,7 +20,7 @@ const NotoSansJP = Noto_Sans_JP({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://motttey.github.io/dialy/"),
+  metadataBase: new URL("https://motttey.github.io/diary/"),
   title: `モチヅ記`,
   icons: "/favicon.ico",
   keywords: ["望月", "望月田吾作", "日記", "ブログ"],

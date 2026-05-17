@@ -9,7 +9,7 @@ export function Header() {
         </h1>
       </Link>
       <h4 className="mt-5 text-center text-lg md:pl-8 md:text-left">
-        A dialy written by{" "}
+        A diary written by{" "}
         <a
           href="https://motttey.github.io/"
           className="underline transition-colors duration-200 hover:text-blue-600"

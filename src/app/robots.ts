@@ -7,16 +7,16 @@ export default function robots(): MetadataRoute.Robots {
     rules: [
       {
         userAgent: "GPTBot",
-        disallow: ["/", "/dialy"],
+        disallow: ["/", "/diary"],
       },
       {
         userAgent: "Googlebot",
-        allow: ["/", "/dialy"],
+        allow: ["/", "/diary"],
       },
       // 効かないかも
       {
         userAgent: "ia_archiver",
-        disallow: ["/", "/dialy"],
+        disallow: ["/", "/diary"],
       },
     ],
   };

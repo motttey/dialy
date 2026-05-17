@@ -1,9 +1,9 @@
 ---
 title: "映画ドラえもん のび太の絵世界物語 感想"
 date: "2025-06-30T00:00:00.000Z"
-coverImage: "https://motttey.github.io/dialy/assets/memo/kuchilatte_paru.webp"
+coverImage: "https://motttey.github.io/diary/assets/memo/kuchilatte_paru.webp"
 ogImage:
-  url: "https://motttey.github.io/dialy/assets/memo/kuchilatte_paru.webp"
+  url: "https://motttey.github.io/diary/assets/memo/kuchilatte_paru.webp"
 description: "[ネタバレあり] ハイパードラえもんクリエイターの望月田吾作による、映画ドラえもん のび太の絵世界物語の感想文です。"
 ---
 
@@ -12,7 +12,7 @@ description: "[ネタバレあり] ハイパードラえもんクリエイター
 
 この文章は、[映画ドラえもん のび太の絵世界物語](https://doraeiga.com/2025/)の感想文です (執筆日: `2025-06-30`)。
 
-![口ラテされるパル](https://motttey.github.io/dialy/assets/memo/kuchilatte_paru.webp "のび太の絵世界物語 パル 口ラテ") *口ラテされるパル*
+![口ラテされるパル](https://motttey.github.io/diary/assets/memo/kuchilatte_paru.webp "のび太の絵世界物語 パル 口ラテ") *口ラテされるパル*
 
 
 ## 映画の独自性
